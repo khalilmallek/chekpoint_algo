@@ -1,0 +1,34 @@
+Algorithme chekpoint
+var 
+ sum_k,sum_v,sum_w: integer:=0;
+ str:string;
+ i:integer:=0;
+ j:integer;
+
+BEGIN
+
+write("give statement please:");
+
+ REPEAT
+    Read(str[i]);
+       i=i+1;
+
+ until(str[i]=".")
+
+For j from 0 to str.Lenght-1 step 1 do
+
+   If(str[i]<>'')then
+    sum_k:=sum_k+1;
+   end_if
+
+If(str[i]=' ')then
+    sum_w:=sum_w+1;
+   End_if
+   
+   if((str[j].tolower()='a')or(str[j].tolower()='o')or(str[j].tolower()='u')or(str[j].tolower()='e')or(str[j].tolower()='i')or(str[j].tolower()='y')) then
+     sum_v:=sum_v+1;
+   End_if
+End_for
+
+  write("the lenght of sentence is"+sum_k+"the numbre of the is word"+sum_w+"and the number of the voyels is "+sum_v);
+End
